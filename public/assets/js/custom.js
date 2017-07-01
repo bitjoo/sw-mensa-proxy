@@ -11,6 +11,16 @@ for (i = 0; i < acc.length; i++) {
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
+    $('.kennz.toolt').each(function (idx, itm) {
+        $(itm).popover({
+            trigger: 'hover',
+            container: 'body',
+            placement: 'bottom',
+            html: true,
+            content: $(itm).find('.tooltip_content').get(0)
+        });
+    })
+
 	$('button.accordion').click(function(e){
 		$(this).next('.panel').find('.lazyload').each(function(i,image){
 			$(image).attr('src',$(image).attr('data-src'));

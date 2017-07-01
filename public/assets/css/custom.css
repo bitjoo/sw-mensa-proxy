@@ -6,7 +6,8 @@
 
 #favoriteMensa,
 .back-to-overview,
-.abstand + .row {
+.abstand + .row,
+.toolt .tooltip_content {
     display: none;
 }
 
@@ -16,4 +17,8 @@
 #listboxEinrichtungen {
     opacity: 0.5;
     pointer-events: none;
+}
+
+.kennz {
+    display: inline-block;
 }
