@@ -1,0 +1,19 @@
+.gray:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+#favoriteMensa,
+.back-to-overview,
+.abstand + .row {
+    display: none;
+}
+
+.nav.splTage,
+.toggleThisNextWeek,
+.toggleAllergenFilterPanel,
+#listboxEinrichtungen {
+    opacity: 0.5;
+    pointer-events: none;
+}

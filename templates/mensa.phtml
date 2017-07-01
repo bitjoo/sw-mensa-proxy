@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>studierendenWERK BERLIN - Mensen</title>
+    <meta name="description"
+          content="Die Mensen und Cafeterien des studierendenWERKs BERLIN sind mit einem vielfältigen Angebot für Sie da! Wer zu uns kommt, kann mehr erwarten als gesundes, reichhaltiges und preiswertes Essen!"/>
+    <link rel="shortcut icon" href="https://www.stw.berlin/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="https://www.stw.berlin/apple-touch-icon.png"/>
+    <!-- Bootstrap -->
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet"
+          media="all">
+
+    <link href="https://www.stw.berlin/assets/templates/bootstrap/css/style-ge-1.0.7.css" rel="stylesheet" media="all">
+    <link href="https://www.stw.berlin/assets/templates/bootstrap/css/normalizer.min.css" rel="stylesheet"
+          media="print">
+    <link href="https://www.stw.berlin/assets/templates/bootstrap/css/print2.css" rel="stylesheet" media="print">
+
+    <link href="https://www.stw.berlin/css/style.css?v=1" rel="stylesheet" media="all">
+    <link href="/assets/css/glyphicons.css" rel="stylesheet" media="all">
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://www.stw.berlin/assets/components/bootstrap/vendor/js/html5shiv.js"></script>
+    <script src="https://www.stw.berlin/assets/components/bootstrap/vendor/js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://www.stw.berlin/vendor/infomax/mensen/css/speiseplan.css" type="text/css"/>
+    <link rel="stylesheet" href="/assets/css/custom.css" type="text/css"/>
+    <script type="text/javascript"
+            src="https://www.stw.berlin/assets/components/bootstrap/vendor/js/jquery.modern.js"></script>
+</head>
+<body>
+<div class="swipe-element">
+    <header class="container-fluid top-banner" role="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="https://www.stw.berlin/" alt="Home studierendenWERK BERLIN"><img
+                                src="https://www.stw.berlin/assets/images/logo-swb.jpg" class="img-responsive logo"
+                                alt="Logo Studierendenwerk Berlin"></a>
+
+                </div>
+                <div class="col-sm-6">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /.swipe-element -->
+</div>
+<!--highlight_start-->
+
+<div class="swipe-element">
+
+    <main class="container">
+
+        <div>
+            <div id="target">
+                <base href="https://www.stw.berlin/">
+                <?= $mensa_html ?>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Template Bereichsseite -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <nav class="metanavigation" role="navigation">
+                    <ul class="list-inline">
+                        <li style="border: none">&copy; studierendenWERK BERLIN</li>
+                        <li><a href="kontakt.html">
+                                Kontakt
+
+                            </a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz/">Datenschutz</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-xs-12 col-sm-3 text-right">
+                powered by bitjo.de
+            </div>
+        </div>
+    </div>
+</footer>
+<!--highlight_end-->
+<!-- /.swipe-element -->
+</div>
+
+<script type="text/javascript"
+        src="https://www.stw.berlin/assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?= $base_path ?>/assets/js/custom.js"></script>
+
+</body>
+</html>
+
