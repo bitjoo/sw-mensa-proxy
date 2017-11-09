@@ -8,6 +8,19 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 
+var bitjo = {
+  ajax: function(url, method, cb) {
+      url = url || '';
+      method = method || 'GET';
+      var newXHR = new XMLHttpRequest();
+      newXHR.addEventListener( 'load', cb );
+      newXHR.open( 'GET', url );
+      newXHR.send();
+  }
+};
+
+
+
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -33,9 +46,21 @@ function filterArtikel() {
     noSupport();
 }
 
-function loadSpeiseplanWochentag() {
-    //TODO: Nächste Woche / Wochentage
-    noSupport();
+function loadSpeiseplanWochentag(date, week, day) {
+    var selectedMensaId = document.getElementById('listboxEinrichtungen').value;
+    bitjo.ajax(
+        document.origin + '/mensa/' + selectedMensaId + '/date/' + date + '/week/' + week,
+        'GET',
+        function() {
+            document.getElementById('speiseplan').innerHTML = this.response;
+            if (week) {
+                loadTagesReiter(day)
+            }
+        });
+}
+
+function loadTagesReiter(day) {
+
 }
 
 function xhrLoad() {
