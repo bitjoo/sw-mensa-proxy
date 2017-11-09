@@ -1,0 +1,7 @@
+<div class="container-fluid splReiter">
+    <ul class="nav nav-tabs splTage">
+<?php foreach ($week as $key => $value) { ?>
+        <li id="spltag<?= $key ?>" onclick="loadSpeiseplanWochentag('<?= $value['date'] ?>')"><a href role="tab" data-toggle="tab"><?= $value['day'] ?></a></li>
+<?php } ?>
+    </ul>
+</div>

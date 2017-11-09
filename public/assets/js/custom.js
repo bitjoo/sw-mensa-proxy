@@ -54,13 +54,18 @@ function loadSpeiseplanWochentag(date, week, day) {
         function() {
             document.getElementById('speiseplan').innerHTML = this.response;
             if (week) {
-                loadTagesReiter(day)
+                loadTagesReiter(date, day)
             }
         });
 }
 
-function loadTagesReiter(day) {
-
+function loadTagesReiter(date, day) {
+    bitjo.ajax(
+        document.origin + '/tabs/date/' + date + '/day/' + day,
+        'GET',
+        function() {
+            document.getElementById('tagesreiter').innerHTML = this.response;
+        });
 }
 
 function xhrLoad() {

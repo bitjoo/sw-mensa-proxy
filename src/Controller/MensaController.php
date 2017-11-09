@@ -3,7 +3,6 @@ namespace Bitjo\Controller;
 
 use Slim\Http\Request;
 use Slim\Http\Response;
-use Monolog\Logger;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ServerException;
 
