@@ -16,7 +16,12 @@ php composer.phar install
 ```
 
 ### Start PHP server
+With a standard timeout of 300 seconds
 ```
-cd public/
-php -S localhost:8000
+php composer.phar start
+```
+
+With no timeout
+```
+php composer.phar run-script start --timeout=0
 ```
